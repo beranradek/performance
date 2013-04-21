@@ -1,0 +1,1 @@
+Pomocný program pro testování zatížení aplikace.

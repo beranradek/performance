@@ -1,0 +1,20 @@
+apply plugin: 'java'
+
+group = 'performance'
+version = '1.0.0-SNAPSHOT'
+assert name == 'performance'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+}
+
+task sources(type: Zip) {
+    classifier = 'src'
+    extension = 'jar'
+    destinationDir = new java.io.File('build/libs')
+    from 'src/main/java'
+    from 'src/main/resources'
+}
